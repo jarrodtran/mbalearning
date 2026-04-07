@@ -33,7 +33,7 @@ export default function RootLayout({
       <body className={`${playfair.variable} ${dmSans.variable} ${jetbrainsMono.variable} font-sans`}>
         <div className="flex flex-col md:flex-row min-h-screen">
           <Sidebar />
-          <main className="flex-1 md:ml-64 w-full px-6 py-8 md:p-12 overflow-x-hidden min-h-screen relative">
+          <main className="flex-1 md:ml-[300px] w-full px-6 py-8 md:p-12 overflow-x-hidden min-h-screen relative">
             {children}
           </main>
         </div>

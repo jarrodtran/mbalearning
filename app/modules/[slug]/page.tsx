@@ -26,10 +26,13 @@ export default async function ModulePage({ params }: { params: { slug: string } 
 
   return (
     <div className="max-w-[720px] mx-auto pb-24 pt-8">
-      <header className="mb-16 border-b border-white/40 pb-12 bg-gradient-to-b from-cream-dark/50 to-transparent p-8 rounded-3xl mt-4 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl -z-10" />
+      <header className="mb-16 border border-white/60 pb-12 bg-white/40 backdrop-blur-xl shadow-[0_4px_24px_-4px_rgba(15,23,42,0.04)] p-8 rounded-3xl mt-4 relative overflow-hidden group">
+        <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-accent_secondary/5 opacity-40 group-hover:opacity-80 transition-opacity duration-1000 -z-10" />
+        <div className="absolute -top-32 -right-32 w-[600px] h-[600px] bg-accent/10 rounded-full blur-3xl -z-10 animate-pulse" style={{ animationDuration: '8s' }} />
+        <div className="absolute -bottom-32 -left-32 w-[600px] h-[600px] bg-accent_secondary/10 rounded-full blur-3xl -z-10 animate-pulse" style={{ animationDuration: '10s', animationDelay: '2s' }} />
+        
         <div className="flex items-center gap-4 mb-8">
-          <span className="text-sm font-mono font-bold text-accent px-4 py-1.5 bg-accent/10 border border-accent/20 rounded-full shadow-sm">
+          <span className="text-sm font-mono font-bold text-accent px-4 py-1.5 bg-white/80 backdrop-blur border border-accent/20 rounded-full shadow-sm">
             Module {String(moduleData.module).padStart(2, '0')}
           </span>
           <span className="text-sm text-text-secondary font-bold tracking-[0.15em] uppercase">
@@ -37,7 +40,7 @@ export default async function ModulePage({ params }: { params: { slug: string } 
           </span>
         </div>
         
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-navy font-bold leading-[1.1] mb-6 tracking-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-[1.1] mb-6 text-gradient pb-2">
           {moduleData.title}
         </h1>
         

@@ -88,7 +88,7 @@ export default function ProfessorChat({ moduleSlug, moduleContext }: ProfessorCh
             <div className={clsx(
               "px-4 py-3 rounded-2xl",
               m.role === 'user' 
-                ? "bg-navy text-white rounded-tr-none" 
+                ? "bg-gradient-to-r from-accent to-accent_secondary text-white rounded-tr-none shadow-md shadow-accent/10" 
                 : "bg-white border border-border text-text-primary shadow-sm rounded-tl-none prose prose-sm max-w-none"
             )}>
               {m.role === 'user' ? (
@@ -120,7 +120,7 @@ export default function ProfessorChat({ moduleSlug, moduleContext }: ProfessorCh
         onSubmit={handleSubmit}
         className="p-4 border-t border-border bg-white"
       >
-        <div className="relative flex items-center bg-cream-dark rounded-xl border border-border overflow-hidden focus-within:ring-2 focus-within:ring-navy/20 transition-shadow">
+        <div className="relative flex items-center bg-cream-dark rounded-xl border border-border overflow-hidden focus-within:ring-2 focus-within:ring-accent/50 focus-within:border-accent/30 transition-all">
           <input
             value={input}
             onChange={handleInputChange}

@@ -63,9 +63,14 @@
 
 /* Custom premium utilities */
 .glass-panel {
-  @apply bg-white/70 backdrop-blur-md border border-white/40 shadow-[0_8px_30px_rgb(0,0,0,0.04)];
+  @apply bg-white/80 backdrop-blur-xl border border-white/60 shadow-[0_4px_24px_-4px_rgba(15,23,42,0.04)];
 }
 
 .hover-lift {
-  @apply transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_20px_40px_-5px_rgba(15,31,61,0.1)];
+  @apply transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_20px_40px_-5px_rgba(79,70,229,0.15)] hover:border-accent/30;
+}
+
+/* For glowing animated text */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent_secondary bg-[length:200%_auto] animate-gradient-xy;
 }

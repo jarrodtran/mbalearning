@@ -47,14 +47,14 @@ export default function Sidebar() {
       )}
 
       <aside className={clsx(
-        "fixed top-0 left-0 z-40 h-screen w-64 border-r border-white/40 bg-cream/90 backdrop-blur-xl shadow-[4px_0_24px_-10px_rgba(0,0,0,0.1)] transition-transform duration-300 md:translate-x-0 flex flex-col",
+        "fixed top-0 left-0 md:top-6 md:left-6 z-40 h-screen md:h-[calc(100vh-48px)] w-64 md:w-64 border border-white/60 bg-cream/80 backdrop-blur-xl md:rounded-2xl shadow-[0_8px_32px_-8px_rgba(15,23,42,0.12)] transition-all duration-300 md:translate-x-0 flex flex-col overflow-hidden",
         isOpen ? "translate-x-0" : "-translate-x-full"
       )}>
-        <div className="p-8 border-b border-border/60 bg-gradient-to-b from-white/60 to-transparent">
-          <div className="w-10 h-10 bg-navy text-cream flex items-center justify-center rounded-xl mb-4 shadow-sm">
+        <div className="p-8 border-b border-border/40 bg-gradient-to-b from-white to-transparent">
+          <div className="w-10 h-10 bg-accent text-white flex items-center justify-center rounded-xl mb-4 shadow-md shadow-accent/20">
             <GraduationCap size={20} />
           </div>
-          <h1 className="font-serif text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-navy to-navy-light leading-tight mb-2">
+          <h1 className="font-serif text-2xl font-bold text-navy leading-tight mb-2">
             Strategic MBA
           </h1>
           <p className="text-[10px] text-accent uppercase tracking-[0.2em] font-bold">
@@ -65,14 +65,14 @@ export default function Sidebar() {
         <div className="flex-1 overflow-y-auto py-6 flex flex-col gap-8 scrollbar-thin">
           
           <nav className="px-4">
-            <h2 className="px-2 text-xs font-bold text-text-secondary uppercase tracking-widest mb-3">Overview</h2>
+            <h2 className="px-2 text-xs font-bold text-text-secondary/60 uppercase tracking-widest mb-3">Overview</h2>
             <ul className="space-y-1">
               <li>
                 <Link 
                   href="/" 
                   className={clsx(
-                    "flex items-center gap-3 px-2 py-2 text-sm rounded-md transition-colors",
-                    pathname === '/' ? "bg-navy/5 text-navy font-bold" : "text-text-secondary hover:bg-navy/5 hover:text-navy"
+                    "flex items-center gap-3 px-3 py-2 text-sm rounded-lg transition-all duration-300",
+                    pathname === '/' ? "bg-white shadow-sm border border-border/50 text-accent font-bold" : "text-text-secondary hover:bg-white/50 hover:text-navy"
                   )}
                 >
                   <BookOpen size={16} />
@@ -83,8 +83,8 @@ export default function Sidebar() {
                 <Link 
                   href="/ask" 
                   className={clsx(
-                    "flex items-center gap-3 px-2 py-2 text-sm rounded-md transition-colors",
-                    pathname === '/ask' ? "bg-navy/5 text-navy font-bold" : "text-text-secondary hover:bg-navy/5 hover:text-navy"
+                    "flex items-center gap-3 px-3 py-2 text-sm rounded-lg transition-all duration-300",
+                    pathname === '/ask' ? "bg-white shadow-sm border border-border/50 text-accent font-bold" : "text-text-secondary hover:bg-white/50 hover:text-navy"
                   )}
                 >
                   <MessageSquare size={16} />
@@ -95,7 +95,7 @@ export default function Sidebar() {
           </nav>
 
           <nav className="px-4">
-            <h2 className="px-2 text-xs font-bold text-text-secondary uppercase tracking-widest mb-3">Modules</h2>
+            <h2 className="px-2 text-xs font-bold text-text-secondary/60 uppercase tracking-widest mb-3">Modules</h2>
             <ul className="space-y-1">
               {modules.map((mod, i) => {
                 const href = `/modules/${mod.slug}`;
@@ -105,11 +105,11 @@ export default function Sidebar() {
                     <Link 
                       href={href}
                       className={clsx(
-                        "block px-2 py-2 text-sm rounded-md transition-colors line-clamp-2",
-                        isActive ? "bg-navy/5 text-navy font-bold" : "text-text-secondary hover:bg-navy/5 hover:text-navy"
+                        "block px-3 py-2 text-sm rounded-lg transition-all duration-300 line-clamp-2",
+                        isActive ? "bg-white shadow-sm border border-border/50 text-accent font-bold" : "text-text-secondary hover:bg-white/50 hover:text-navy"
                       )}
                     >
-                      <span className="opacity-50 text-xs mr-2 font-mono">{String(i+1).padStart(2, '0')}</span>
+                      <span className={clsx("text-xs mr-2 font-mono", isActive ? "text-accent/60" : "opacity-40")}>{String(i+1).padStart(2, '0')}</span>
                       {mod.title}
                     </Link>
                   </li>

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="max-w-5xl mx-auto py-8">
       <header className="mb-16">
-        <h1 className="text-4xl md:text-6xl font-serif text-navy font-bold tracking-tight mb-4 leading-tight">
+        <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight mb-4 leading-[1.1] text-gradient pb-2">
           Strategic MBA <br/>Masterclass
         </h1>
         <p className="text-xl md:text-2xl text-text-secondary font-serif max-w-2xl">
@@ -20,7 +20,7 @@ export default function Home() {
           <Link 
             href={`/modules/${mod.slug}`} 
             key={mod.slug}
-            className="group flex flex-col glass-panel rounded-2xl p-8 hover-lift border-t-4 border-t-transparent hover:border-t-accent"
+            className="group relative flex flex-col glass-panel rounded-2xl p-8 hover-lift overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-accent/0 before:to-accent_secondary/0 before:transition-all before:duration-500 hover:before:from-accent/[0.03] hover:before:to-accent_secondary/[0.03]"
           >
             <div className="flex items-center justify-between mb-6">
               <span className="text-xs font-mono font-bold text-accent px-3 py-1 bg-accent/10 rounded-full border border-accent/20">

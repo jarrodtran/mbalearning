@@ -10,19 +10,21 @@ const config: Config = {
     extend: {
       colors: {
         navy: {
-          DEFAULT: "#0f1f3d",
-          light: "#1a3460",
+          DEFAULT: "#0F172A", // Deep Slate
+          light: "#1E293B",
         },
         cream: {
-          DEFAULT: "#faf8f4",
-          dark: "#f0ece4",
+          DEFAULT: "#F8FAFC", // Cool White
+          dark: "#F1F5F9",
         },
         text: {
-          primary: "#1a1a2e",
-          secondary: "#4a5568",
+          primary: "#0F172A",
+          secondary: "#64748B",
         },
-        accent: "#c8973a",
-        border: "#e2d9cc",
+        accent: "#4F46E5", // Indigo
+        accent_hover: "#4338CA",
+        accent_secondary: "#E11D48", // Rose
+        border: "#E2E8F0",
       },
       typography: (theme: any) => ({
         DEFAULT: {
@@ -66,6 +68,21 @@ const config: Config = {
           },
         },
       }),
+      keyframes: {
+        'gradient-xy': {
+          '0%, 100%': {
+            'background-size': '400% 400%',
+            'background-position': 'left center'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center'
+          }
+        }
+      },
+      animation: {
+        'gradient-xy': 'gradient-xy 15s ease infinite',
+      }
     },
   },
   plugins: [
