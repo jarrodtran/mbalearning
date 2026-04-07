@@ -10,21 +10,21 @@ const config: Config = {
     extend: {
       colors: {
         navy: {
-          DEFAULT: "#0F172A", // Deep Slate
-          light: "#1E293B",
+          DEFAULT: "#050517", // Deeper Ivy Black/Navy
+          light: "#0F172A",
         },
         cream: {
-          DEFAULT: "#F8FAFC", // Cool White
-          dark: "#F1F5F9",
+          DEFAULT: "#FDFBF7", // Warmer academic white
+          dark: "#F3F0E9",
         },
         text: {
-          primary: "#0F172A",
-          secondary: "#64748B",
+          primary: "#050517",
+          secondary: "#5C616B",
         },
-        accent: "#4F46E5", // Indigo
-        accent_hover: "#4338CA",
-        accent_secondary: "#E11D48", // Rose
-        border: "#E2E8F0",
+        accent: "#8C1515", // Stanford Cardinal
+        accent_hover: "#730E0E",
+        accent_secondary: "#A51C30", // Harvard Crimson
+        border: "#EAE5DC",
       },
       typography: (theme: any) => ({
         DEFAULT: {

@@ -67,7 +67,7 @@
 }
 
 .hover-lift {
-  @apply transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_20px_40px_-5px_rgba(79,70,229,0.15)] hover:border-accent/30;
+  @apply transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_20px_40px_-5px_rgba(140,21,21,0.15)] hover:border-accent/30;
 }
 
 /* For glowing animated text */
