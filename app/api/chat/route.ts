@@ -12,12 +12,12 @@ export async function POST(req: Request) {
     : buildGlobalSystemPrompt();
 
   const result = await streamText({
-    model: google('models/gemini-2.5-flash'), // gemini-2.5-flash since user asked for free API
+    model: google('models/gemini-2.5-flash'),
     system: systemPrompt,
     messages,
   });
 
-  return result.toDataStreamResponse ? result.toDataStreamResponse() : (result as any).toTextStreamResponse();
+  return result.toUIMessageStreamResponse();
 }
 
 function buildModuleSystemPrompt(moduleSlug: string, context: string): string {
