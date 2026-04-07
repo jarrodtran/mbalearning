@@ -2,26 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-cream text-text-primary antialiased;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.prose {
+  @apply max-w-[720px] mx-auto text-text-primary text-lg leading-relaxed;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  @apply font-serif text-navy tracking-tight;
+}
+
+.prose h2 {
+  @apply mt-12 mb-6 text-3xl font-bold;
+}
+
+.prose h3 {
+  @apply mt-8 mb-4 text-2xl font-bold;
+}
+
+.prose h4 {
+  @apply mt-6 mb-4 text-xl font-bold;
+}
+
+.prose p {
+  @apply mb-6;
+}
+
+.prose ul {
+  @apply list-disc list-outside ml-6 mb-6;
+}
+
+.prose ul li {
+  @apply mb-2 pl-2;
+}
+
+.prose hr {
+  @apply my-12 border-border border-t-2;
+}
+
+.prose strong {
+  @apply font-bold text-navy-light;
+}
+
+.prose table {
+  @apply w-full text-left border-collapse my-8 rounded-lg overflow-hidden;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.prose th {
+  @apply bg-navy text-cream p-4 font-bold tracking-wide text-sm uppercase;
+}
+
+.prose td {
+  @apply p-4 border-b border-border bg-white;
+}
+
+/* Custom premium utilities */
+.glass-panel {
+  @apply bg-white/70 backdrop-blur-md border border-white/40 shadow-[0_8px_30px_rgb(0,0,0,0.04)];
+}
+
+.hover-lift {
+  @apply transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_20px_40px_-5px_rgba(15,31,61,0.1)];
 }
