@@ -3,69 +3,278 @@ title: "Managerial Accounting & Control"
 module: 13
 school: "Harvard Business School"
 description: "Master the internal metrics of success: activity-based costing, balanced scorecards, and incentive design to drive operational reality."
+slug: "managerial-accounting"
 ---
 
-## 1. The Purpose of Managerial Accounting
+# MODULE 13: MANAGERIAL ACCOUNTING & CONTROL
+## Inspired by Harvard Business School
 
-While Financial Accounting is strictly about providing historical, highly regulated data to external stakeholders (via GAAP/IFRS), **Managerial Accounting** is an unregulated, wild-west discipline entirely focused on providing forward-looking, actionable data to internal executives. 
+### Executive Briefing (SCQA)
 
-Financial accounting tells you *if* the corporation made a profit over the last quarter. Managerial accounting tells you *where* you made it, *why*, and exactly *which levers* to pull to make more tomorrow. 
+**Situation:** Every major business decision — pricing a product, entering a market, evaluating a manager, designing an incentive system — requires understanding the true economics of the business. Not the GAAP-reported figures that are prepared for external audiences, but the internal economic reality: which products actually make money, which customers are actually profitable, which cost centers are actually creating value, and which performance metrics actually predict long-term success.
 
-If a CEO uses GAAP accounting statements to make operational pricing decisions, they are flying a fighter jet while only looking in the rearview mirror.
+**Complication:** Standard financial accounting, which virtually every organization uses, was designed for external reporting — to satisfy investors, regulators, and tax authorities. As an internal management tool, it is systematically misleading. It allocates costs using methods that distort product profitability. It measures performance with metrics that create perverse incentives. And it reports historical results that tell you where you've been, not where you need to go.
 
-## 2. Standard Costing vs. Activity-Based Costing (ABC)
+**Question:** How do executives design information systems that provide accurate intelligence about the real economics of their business, align management behavior with strategic objectives, and create a control environment that produces honest, actionable reporting rather than the sanitized signals that typically flow upward through organizations?
 
-One of the most catastrophic errors a manufacturing or service firm can make is miscalculating product profitability due to lazy overhead allocation. 
+**Answer:** By mastering three interconnected disciplines: Activity-Based Costing (which reveals true product and customer economics), the Balanced Scorecard (which provides a multidimensional performance measurement system aligned to strategy), and Management Control System design (which determines how incentives, culture, and organizational structure interact to drive business outcomes).
 
-### The Flaw of Traditional Costing
-Traditional systems take all indirect overhead costs (rent, executive salaries, HR, IT, machine maintenance) and allocate them across all products using a single, simplistic "driver"—usually direct labor hours or machine hours. 
+---
 
-*Imagine a factory producing two widgets:*
-- **Widget A:** A simple, high-volume, standardized unit. Requires 1 hour of labor.
-- **Widget B:** A complex, low-volume, highly customized unit. Requires 1 hour of labor.
-Under traditional costing, both widgets absorb the exact same amount of corporate overhead because they take the same labor time. 
+### Core Framework 1: Activity-Based Costing — The Truth About Profitability
 
-### The Precision of ABC
-**Activity-Based Costing (ABC)** destroys this illusion. ABC traces overhead costs directly to the specific *activities* that generate them (e.g., engineering design hours, quality assurance inspections, procurement orders), and allocates those costs to products based on actual consumption.
+#### The Failure of Traditional Cost Allocation
 
-Under ABC, the math reveals reality:
-- **Widget A** requires no custom engineering, zero procurement changes, and passes QA instantly. It absorbs very little overhead. Its true profit margin is actually massive.
-- **Widget B** requires constantly changing procurement orders, custom engineering blueprints, and 4x the QA inspections. When these specific activities are charged to Widget B, you realize the product is actually heavily loss-making. 
-Without ABC, the profitable Widget A silently subsidizes the unprofitable Widget B, completely destroying the firm's strategic pricing ability.
+Every business incurs costs that are not directly attributable to specific products or customers — what accountants call "indirect" or "overhead" costs. Examples: factory rent, equipment maintenance, quality control, procurement, engineering, IT infrastructure.
 
-## 3. The Balanced Scorecard & Strategy Maps
+Traditional cost accounting allocates these overhead costs using a simple, often arbitrary mechanism: pick a single "cost driver" (direct labor hours, machine hours, direct material cost) and use it to distribute all overhead proportionally across products.
 
-Developed by Dr. Robert Kaplan (HBS) and Dr. David Norton, the Balanced Scorecard revolutionized corporate measurement by forcing executives to acknowledge that strict financial metrics are lagging indicators. You cannot "manage" a stock price; you can only manage the activities that result in a stock price.
+**The problem:** This approach assumes that all products place equal demands on overhead resources in proportion to their use of the cost driver. In practice, this assumption is almost always wrong — often dramatically wrong.
 
-The Scorecard measures a firm across four strictly linked pillars, visualized via a **Strategy Map**:
-1. **Learning & Growth:** "Do we have the right human capital, IT infrastructure, and culture?" 
-   *(Leads to...)*
-2. **Internal Process:** "Are our operations efficient, innovative, and compliant?"
-   *(Leads to...)*
-3. **Customer:** "Are we delivering the value proposition (speed, quality, cost) that clients demand?"
-   *(Leads to...)*
-4. **Financial:** "Are we driving revenue growth and high asset utilization?"
+**A concrete example:**
 
-If executives optimize solely for short-term financial returns, they invariably cut R&D and employee training. The financials look brilliant for three quarters, while the foundation of the firm silently rots.
+A manufacturer produces two products:
+- **Product Alpha:** A simple, standardized component. Produces 100,000 units per year. Requires 1 direct labor hour per unit. Minimal engineering attention, straightforward procurement, passes quality control immediately.
+- **Product Beta:** A complex, customized component. Produces 5,000 units per year. Also requires 1 direct labor hour per unit. Requires 8 hours of engineering per production run, generates complex procurement orders, requires 3x the quality inspections.
 
-## 4. Case Study: Wells Fargo & The Crisis of Control Systems
+Under traditional cost accounting, Alpha and Beta absorb identical overhead per unit because they use identical direct labor hours. The cost system treats them as equivalent overhead consumers.
 
-"Show me the incentive and I will show you the outcome." — Charlie Munger.
+Under Activity-Based Costing, we trace overhead costs to the activities that generate them and then to the products that demand those activities:
 
-Management control systems must perfectly align the behavior of the employees with the strategic goals of the firm. 
+| Activity | Cost | Driver | Alpha's Demand | Beta's Demand |
+|---|---|---|---|---|
+| Engineering support | $500,000 | Engineering hours | 200 hours | 1,600 hours |
+| Procurement | $300,000 | Purchase orders | 50 orders | 400 orders |
+| Quality control | $200,000 | Inspections | 100,000 units | 15,000 units |
 
-### The Setup
-In the 2010s, Wells Fargo launched an aggressive cross-selling initiative known as "Gr-Eight" (aiming for customers to hold 8 different financial products with the bank). The strategic theory was sound: customers with multiple accounts are significantly more profitable and have radically lower churn rates.
+The ABC analysis reveals that Beta, despite its lower volume, consumes a disproportionate share of every overhead category. When these costs are traced accurately, Alpha's true margin is far higher than the traditional system suggests — and Beta may actually be unprofitable at current pricing.
 
-### The Incentive Failure
-Executive management mandated aggressive daily sales quotas for cross-selling and tied branch manager compensation and job security directly to hitting these raw numeric targets. 
+**The strategic implication:** If you price Alpha at its reported cost plus a standard margin, you are undercharging for a reliably profitable product. If you price Beta at its reported cost plus a standard margin, you are undercharging for a product that loses money at full overhead absorption. The traditional system is not just imprecise — it is causing you to price your products backward.
 
-Crucially, the control system only measured *accounts opened*. It failed to measure *account usage*, *customer satisfaction*, or *quality of revenue*. 
+#### Implementing ABC — The Executive Process
 
-### The Execution & Results
-Under intense pressure to hit quotas, employees explicitly gamed the metric. They engaged in widespread, systemic fraud—opening millions of unauthorized credit cards and checking accounts in the names of existing customers, occasionally funding them with the customer's own money.
+**Step 1: Map the activities**
+Identify all significant overhead-consuming activities: engineering changes, procurement orders, quality inspections, customer service calls, shipping and receiving, etc.
 
-Because the managerial dashboard lacked protective counter-metrics (like customer complaints or account funding ratios), the executive suite saw the dashboard showing brilliant success for years. When the fraud was uncovered, it resulted in billions in fines, severe operational restrictions imposed by the Federal Reserve, and the complete destruction of a 150-year-old brand.
+**Step 2: Assign resource costs to activities**
+Determine how much of each resource (people, equipment, facilities) is consumed by each activity. This typically requires time-and-effort studies or employee time surveys.
 
-## Executive Takeaway
-You manage exactly what you measure. Executive leadership is ultimately about designing the dashboard that your organization optimizes against. If you measure the wrong variable, your employees will efficiently and ruthlessly destroy your company to hit their bonus targets.
+**Step 3: Identify activity cost drivers**
+For each activity, identify the metric that best predicts how much of that activity a product or customer consumes. Engineering change orders, purchase orders, inspection events, customer orders, delivery locations, etc.
+
+**Step 4: Assign activity costs to cost objects**
+Using activity cost drivers, allocate each activity's cost to the products, customers, or channels that demand it.
+
+**Step 5: Calculate true profitability**
+Add the traced indirect costs to the direct costs. Calculate margin at this fully loaded cost level. The resulting picture is often dramatically different from the traditional cost-based view.
+
+#### Customer Profitability Analysis
+
+ABC applies equally to customer profitability. Some customers are expensive to serve even when their purchasing volume appears profitable on a traditional basis:
+
+- Customers who require extensive pre-sale technical support
+- Customers who place frequent small orders rather than consolidated large orders
+- Customers who have high return rates
+- Customers who pay slowly, consuming working capital
+- Customers who demand extensive customization or special handling
+
+A customer profitability analysis using ABC traces all customer-related costs — cost to acquire, cost to serve, cost to collect — and reveals which customers are genuinely profitable and which are being subsidized by other customers.
+
+**The "whale curve":** A common finding in customer profitability analysis is that approximately 20% of customers generate 200%+ of profits, another 60% generate approximately break-even results, and the remaining 20% generate losses large enough to consume the profits from the first group. The company's aggregate profitability obscures this dramatic internal variation.
+
+---
+
+### Core Framework 2: The Balanced Scorecard
+
+Robert Kaplan and David Norton developed the Balanced Scorecard in the early 1990s after observing a fundamental problem with financial performance measurement: financial metrics are lagging indicators. By the time your financials deteriorate, the underlying problems have been developing for months or years.
+
+If you manage a business exclusively by its financial results, you are — in Kaplan's words — "trying to navigate a ship by looking at the wake." The wake tells you where the ship has been. To navigate effectively, you need to look forward.
+
+#### The Four Perspectives
+
+**Perspective 1: Financial**
+The traditional perspective. How do we look to our shareholders?
+
+Metrics: Revenue growth, operating margin, return on invested capital (ROIC), economic value added (EVA), free cash flow.
+
+**Strategic role:** The financial perspective is the culmination of everything else. If the other three perspectives are managed well, the financial results should follow. Financial metrics are the lagging indicators that tell you how well the system is performing.
+
+**Perspective 2: Customer**
+How do we look to our customers?
+
+Metrics: Customer satisfaction scores, Net Promoter Score (NPS), customer retention rate, customer acquisition cost, customer lifetime value, market share in target segments.
+
+**Strategic role:** Customers are the source of cash flows. The customer perspective connects the internal activities of the organization to the external market results that ultimately drive financial performance. If customers are satisfied, retained, and growing in their relationship with the company, financial results in subsequent periods should improve.
+
+**Perspective 3: Internal Process**
+What must we excel at internally?
+
+Metrics: Cycle time, defect rate, on-time delivery, process capability, innovation pipeline (new product development cycle time, percentage of revenue from new products), regulatory compliance metrics.
+
+**Strategic role:** Internal processes are the mechanisms that deliver value to customers. Improving internal process performance drives customer satisfaction, which drives financial results. The internal process perspective should focus on the 3-5 processes that are most critical to delivering the company's customer value proposition.
+
+**Perspective 4: Learning & Growth**
+How do we continue to change and improve?
+
+Metrics: Employee engagement scores, employee retention (especially for key talent), training hours, skills assessments, technology infrastructure capabilities, knowledge management system adoption.
+
+**Strategic role:** Learning and growth is the foundation. Employee capabilities, information systems, and organizational processes are the source of all value. Without investment in learning and growth, the other three perspectives degrade over time — internal processes become outdated, customer satisfaction erodes, and financial results deteriorate.
+
+#### The Strategy Map
+
+A Strategy Map is the causal logic diagram that connects the four perspectives: improvements in Learning & Growth drive improvements in Internal Processes; improvements in Internal Processes drive improvements in Customer outcomes; improvements in Customer outcomes drive improvements in Financial results.
+
+**Example Strategy Map — Retail Bank:**
+
+- Learning & Growth: Train advisors on new investment products (Y1) → Launch certification program for financial planning (Y2)
+- Internal Process: Increase cross-sell effectiveness of advisors (Y1-Y2) → Reduce loan application processing time (Y2)
+- Customer: Increase wallet share per household (Y2-Y3) → Improve customer satisfaction with advisory quality (Y2-Y3)
+- Financial: Increase fee income per customer (Y3) → Improve operating leverage (Y3-Y4)
+
+The map makes explicit the time delays and causal chains that connect investment in people and process to eventual financial results. It also protects against the short-termism that would cut learning & growth investments (training, technology) to improve near-term profitability — investments that damage the organization's capacity to compete in subsequent years.
+
+#### Implementing the Balanced Scorecard
+
+**Step 1: Clarify strategic objectives**
+What is the company trying to accomplish? What does success look like five years from now, across all four perspectives?
+
+**Step 2: Identify the critical success factors**
+For each strategic objective, what must the organization do exceptionally well? These are the critical success factors — the 4-6 things that make the difference between success and failure.
+
+**Step 3: Select the KPIs**
+For each critical success factor, what specific metric will tell you whether you're succeeding? The metric must be measurable (you can actually collect the data), meaningful (it reflects the underlying reality, not a proxy that can be gamed), and manageable (managers can actually influence it).
+
+**Step 4: Set targets and initiatives**
+For each KPI, what's the target level of performance? What specific initiatives will be executed to achieve each target?
+
+**Step 5: Integrate with incentives**
+The Balanced Scorecard is only operational if manager compensation is linked to scorecard performance. A scorecard that is tracked but not consequential will be produced conscientiously and ignored.
+
+---
+
+### Core Framework 3: Management Control System Design
+
+A Management Control System (MCS) is the complete set of mechanisms through which the organization ensures that individual and group behavior aligns with organizational objectives. It includes:
+
+- **Results controls:** Measuring and rewarding outcomes (sales targets, profit margins)
+- **Action controls:** Specifying required behaviors and processes (policies, procedures)
+- **Personnel controls:** Selecting and developing people who will naturally behave appropriately (hiring, training, culture)
+
+#### The Fundamental Design Tension: Control vs. Empowerment
+
+More control reduces variance in outcomes but also reduces flexibility, creativity, and the ability to respond to unexpected circumstances. Less control enables adaptability and initiative but increases the risk of misalignment, fraud, and poor decision-making.
+
+The optimal balance depends on:
+
+**Environmental uncertainty:** In highly dynamic, uncertain environments (technology startups, creative industries), results and action controls become less effective because the "right" behavior changes faster than control systems can adapt. Personnel controls — hiring people with strong values and good judgment — become more important.
+
+**Observability of effort:** When it's difficult to observe whether employees are working hard or making good decisions (knowledge workers, sales professionals, managers), results controls are preferred over action controls. When output quality is difficult to observe but effort is easily measurable (manufacturing workers, service workers), action controls become more appropriate.
+
+**Task programmability:** When the correct action is well-defined and stable (accounting procedures, quality protocols), action controls are efficient. When the correct action is ambiguous or context-dependent (executive decision-making, creative work), personnel controls and results controls are more appropriate.
+
+#### Levers of Control — Simons' Framework
+
+Robert Simons (HBS) identified four "levers of control" that senior executives use to implement strategy:
+
+**Belief systems:** Core values and mission statements that communicate what the organization stands for and inspire commitment beyond compliance. The belief system is the cultural foundation — it defines the kind of organization people want to be part of.
+
+**Boundary systems:** Explicit prohibitions — what is not acceptable behavior, regardless of the financial consequences. Regulations, codes of ethics, strategic "not do" lists. Boundary systems prevent individuals from pursuing value-creating opportunities that are inconsistent with organizational values or risk tolerance.
+
+**Diagnostic control systems:** The formal systems used to monitor outcomes and correct deviations from plan. Budgets, performance dashboards, exception reporting systems. These are the "management-by-exception" systems that allow executives to delegate authority while maintaining oversight.
+
+**Interactive control systems:** The systems that senior managers use to personally involve themselves in the decisions of subordinates. The choice of which control systems to use interactively — which management reports do senior leaders personally review and discuss in regular meetings — signals strategic priorities. The systems that receive senior leadership attention are the systems the organization takes seriously.
+
+---
+
+### Core Framework 4: Behavioral Economics of Incentive Design
+
+The most sophisticated control system in the world fails if the incentives create unintended behaviors. Incentive design is simultaneously a financial, psychological, and organizational challenge.
+
+#### The Campbell's Law Problem
+
+Donald Campbell, a sociologist, observed: "The more any quantitative social indicator is used for social decision-making, the more subject it will be to corruption pressures and the more apt it will be to distort and corrupt the social processes it is intended to monitor."
+
+In simpler terms: any metric that becomes a target stops being a good measure of what it was intended to measure. Employees optimize for the metric rather than the underlying objective. This is not dishonesty — it is rational behavior in response to the incentives the organization has created.
+
+**Business examples:**
+
+- A bank that measures branches on "accounts opened" triggers the opening of unauthorized accounts (Wells Fargo)
+- A software company that measures developers on "lines of code" triggers verbose, inefficient code
+- A sales organization that measures on "revenue closed" triggers end-of-quarter discounting that destroys margin
+- A hospital that measures on "patient satisfaction scores" triggers over-prescribing of requested medications
+
+**The preventive design principle:** For every metric that serves as an incentive target, identify the "gaming" behavior that a rational, self-interested employee would engage in to hit the target without actually achieving the underlying objective. Then add counter-metrics that make the gaming behavior visible or unprofitable.
+
+#### Multi-Metric Incentive Structures
+
+Rather than single metrics, sophisticated organizations use portfolios of metrics that collectively capture the desired behavior:
+
+**Example — Sales organization:**
+- Revenue closed (captures volume)
+- Gross margin on closed deals (prevents margin-destroying discounting)
+- 90-day retention rate (prevents overselling and disappointing customers who cancel)
+- Customer satisfaction score at 3 months (captures quality of what was sold)
+- Pipeline quality metrics (captures forecast accuracy and deal hygiene)
+
+No single metric can be gamed by an individual without adversely affecting the others. The system captures the complete behavioral picture.
+
+---
+
+### Case Study: Wells Fargo — When Incentives Destroy a 150-Year-Old Institution
+
+#### The Strategic Context
+
+Wells Fargo's cross-selling strategy was, at its origin, analytically sound. Research documented that customers with multiple products at a single bank have dramatically higher lifetime value: they are less likely to leave (switching costs increase with each account), more likely to use higher-margin products, and more profitable on a per-customer basis.
+
+Wells Fargo's goal of deepening customer relationships — increasing the average number of products per household — was a legitimate strategic objective. The idea of tracking cross-selling metrics and tying manager compensation to cross-selling performance was not inherently wrong.
+
+The failure was in the implementation.
+
+#### The Incentive Architecture Failure
+
+**Error 1: Single metric without counter-metrics**
+
+The cross-selling KPI was number of accounts opened. This metric was used to set quotas (branch managers had daily cross-selling targets), evaluate performance (branch managers were ranked and reported on this metric), and determine compensation and job security.
+
+The system contained no counter-metrics:
+- No measurement of account usage (whether opened accounts were actually used)
+- No measurement of customer satisfaction following cross-sell attempts
+- No measurement of voluntary account closures within 30 or 90 days
+- No measurement of customer complaint rates by branch
+
+**Error 2: Quota pressure exceeded ethical guardrails**
+
+The pressure to hit daily cross-selling numbers was intense and immediate. Managers who missed targets received immediate negative consequences. The system made hitting the short-term metric imperative, while the counter-metrics that would have revealed fraud were absent or too slow to attribute.
+
+**Error 3: Reporting systems were disconnected from reality**
+
+Executives received reports showing consistent cross-selling performance growth across the branch network. The data was real — accounts were being opened. What the reporting system couldn't detect was that customers hadn't consented to many of those accounts.
+
+#### The Cascade of Consequences
+
+The Wells Fargo scandal resulted in:
+- $3 billion in regulatory fines (CFPB, OCC, DOJ)
+- A Federal Reserve asset cap order requiring Wells Fargo to hold total assets constant until governance improvements were demonstrated — a restriction essentially unprecedented for a major US bank
+- The forced resignation of CEO John Stumpf
+- An estimated 3.5 million unauthorized accounts
+- Systemic destruction of customer trust
+- Approximately 5,300 employees terminated
+
+What the incentive system revealed was a fundamental failure of management control design. The executives who designed the cross-selling program were not malicious — they created what appeared to be a coherent performance management system aligned to a legitimate strategic objective. But the gap between the metric and the underlying objective was large enough for rational, self-protecting employees to exploit it systematically.
+
+#### The Design Lessons
+
+1. **Every performance metric should have a counter-metric that reveals gaming**
+2. **Pressure levels that incentivize gaming are visible in data — but only if you're measuring the right things**
+3. **Account-level activity tracking (was this account actually used?) was technically feasible and would have surfaced the fraud years earlier**
+4. **The boundary system (ethics training, code of conduct) was insufficient when the diagnostic control system was creating opposite incentives**
+
+---
+
+### Executive Takeaway
+
+The managerial accounting and control systems you design are not administrative infrastructure — they are the behavioral architecture of your organization. Every manager in your organization is running a continuous optimization against whatever metrics and incentives you have put in front of them. If those metrics are poorly designed, your organization is efficiently and systematically doing the wrong things.
+
+The most consequential decisions an executive makes are not strategic choices about markets or acquisitions. They are architectural choices about measurement, incentives, and information flows — the invisible systems that determine what the organization actually does at the scale of thousands of decisions per day.
+
+Design those systems with the rigor you would bring to any other critical engineering challenge.

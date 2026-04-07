@@ -3,7 +3,7 @@
 
 import { useChat } from '@ai-sdk/react';
 import { Send, Trash2, User, GraduationCap } from 'lucide-react';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import clsx from 'clsx';
 import ReactMarkdown from 'react-markdown';
 
@@ -13,13 +13,15 @@ interface ProfessorChatProps {
 }
 
 export default function ProfessorChat({ moduleSlug, moduleContext }: ProfessorChatProps) {
-  const { messages = [], input = '', handleInputChange, handleSubmit, setMessages, isLoading = false } = useChat({
+  const { messages = [], sendMessage, setMessages, isLoading = false } = useChat({
     api: '/api/chat',
     body: {
       moduleSlug,
       moduleContext,
     },
   });
+
+  const [input, setInput] = useState('');
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -32,6 +34,17 @@ export default function ProfessorChat({ moduleSlug, moduleContext }: ProfessorCh
   const clearChat = () => {
     setMessages([]);
   };
+
+  const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    setInput(e.target.value);
+  }, []);
+
+  const handleSubmit = useCallback((e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (!input.trim() || isLoading) return;
+    sendMessage({ text: input });
+    setInput('');
+  }, [input, isLoading, sendMessage]);
 
   return (
     <div className="flex flex-col h-full bg-cream backdrop-blur-sm">
