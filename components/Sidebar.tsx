@@ -17,7 +17,13 @@ const modules = [
   { slug: 'operations-systems', title: 'Operations & Systems Thinking' },
   { slug: 'global-strategy', title: 'Global Strategy & Expansion' },
   { slug: 'entrepreneurial-finance', title: 'Entrepreneurial Finance' },
-  { slug: 'decision-making', title: 'Strategic Decision-Making' }
+  { slug: 'decision-making', title: 'Strategic Decision-Making' },
+  { slug: 'business-analytics-ai', title: 'Business Analytics, AI & Data Strategy' },
+  { slug: 'managerial-accounting', title: 'Managerial Accounting & Control' },
+  { slug: 'venture-capital', title: 'Venture Capital & Private Equity' },
+  { slug: 'organizational-behavior', title: 'Organizational Behavior & Change' },
+  { slug: 'macroeconomics', title: 'Macroeconomics & Global Markets' },
+  { slug: 'supply-chain', title: 'Supply Chain & Logistics Management' }
 ];
 
 export default function Sidebar() {
